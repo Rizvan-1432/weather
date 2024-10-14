@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приложение погоды</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Приложение погоды</h1>
+        <form id="location-form">
+            <label for="location">Введите ваше местоположение:</label>
+            <input type="text" id="location" name="location" required>
+            <button type="submit">Получить погоду</button>
+        </form>
+        <div id="loading" class="hidden">Загрузка...</div>
+        <div id="weather-info" class="hidden"></div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
